@@ -33,6 +33,7 @@ namespace ProjetoCaçaNiquel1._1
         {
             InitializeComponent();
             // Listagem de discos da roleta (1 laranja -- 3 bananas -- 6 maças)
+
             listaRoleta = new List<string>();
             listaRoleta.Add("laranja.png");
             listaRoleta.Add("banana.png");
