@@ -50,6 +50,7 @@ namespace ProjetoCaçaNiquel1._1
             this.BackgroundImage = global::ProjetoCaçaNiquel1._1.Properties.Resources.Sky1;
             this.ClientSize = new System.Drawing.Size(614, 451);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
             this.Name = "Ranking";
             this.Text = "Ranking";
             this.Load += new System.EventHandler(this.Ranking_Load);

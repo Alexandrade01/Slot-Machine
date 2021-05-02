@@ -81,7 +81,7 @@ namespace ProjetoCaçaNiquel1._1
             this.BtnRanking.Name = "BtnRanking";
             this.BtnRanking.Size = new System.Drawing.Size(127, 29);
             this.BtnRanking.TabIndex = 3;
-            this.BtnRanking.Text = "Ranking ";
+            this.BtnRanking.Text = "Histórico";
             this.BtnRanking.UseVisualStyleBackColor = false;
             this.BtnRanking.Click += new System.EventHandler(this.BtnRanking_Click);
             // 

@@ -18,13 +18,17 @@ namespace ProjetoCaçaNiquel1._1
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Ranqueamento
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Ranking_Load(object sender, EventArgs e)
-        {
+        {//se o arquivo json existe ira ser carregado dentro de um array e inserido no campo do textbox
             if (File.Exists("dados.json"))
             {
                 string[] dados = File.ReadAllLines("dados.json");
-                foreach(var dado in dados)
+                foreach (var dado in dados)
                 {
                     textBox1.Text += dado + Environment.NewLine;
                 }

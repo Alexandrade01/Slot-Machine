@@ -12,19 +12,24 @@ namespace ProjetoCaçaNiquel1._1
 {
     public partial class Results : Form
     {
-        
+
         public Results()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Para sair 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOK_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
         public string NovoSaldo { get; set; }
         private void Results_Load(object sender, EventArgs e)
-        {
+        {//Dependendo do resultado o texto label ira receber um novo saldo da propriedade NovoSaldo
             label1.Text = NovoSaldo;
         }
     }

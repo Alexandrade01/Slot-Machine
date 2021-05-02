@@ -21,8 +21,15 @@ namespace ProjetoCaçaNiquel1._1
 
         }
 
-
-
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            _soundPlayer.PlayLooping();
+        }
+        /// <summary>
+        /// Iniciar o jogo
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnIniciar_Click(object sender, EventArgs e)
         {
             Main main = new Main();
@@ -43,7 +50,11 @@ namespace ProjetoCaçaNiquel1._1
 
 
         }
-
+        /// <summary>
+        /// Mostrar o ranking
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnRanking_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -51,18 +62,11 @@ namespace ProjetoCaçaNiquel1._1
             ranking.ShowDialog();
             this.Visible = true;
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            int r = rnd.Next(0, 255);
-            int g = rnd.Next(0, 255);
-            int b = rnd.Next(0, 255);
-
-          
-            txtLogo.ForeColor = Color.FromArgb(r, g, b);
-        }
-
+        /// <summary>
+        /// Exibir as equações
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnEquacoes_Click(object sender, EventArgs e)
         {
             this.Visible = false;
@@ -71,10 +75,25 @@ namespace ProjetoCaçaNiquel1._1
             this.Visible = true;
 
         }
-
-        private void Inicio_Load(object sender, EventArgs e)
+        /// <summary>
+        /// Display colorido do logotipo caçaníquel 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            _soundPlayer.PlayLooping();
+            Random rnd = new Random();
+            int r = rnd.Next(0, 255);
+            int g = rnd.Next(0, 255);
+            int b = rnd.Next(0, 255);
+
+
+            txtLogo.ForeColor = Color.FromArgb(r, g, b);
         }
     }
 }
+
+
+
+
+
