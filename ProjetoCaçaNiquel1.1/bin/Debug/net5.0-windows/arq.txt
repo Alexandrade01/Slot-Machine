@@ -3,3 +3,4 @@ Nome : mario          Saldo: R$-2,00           Quantidade de partidas 4
 Nome : abc          Saldo: R$-2,00           Quantidade de partidas 4
 Nome :abc          Saldo: R$2,00           Quantidade de partidas 2
 Nome :joanes          Saldo: R$-1,00           Quantidade de partidas 1
+Nome : abc          Saldo: R$-1,00           Quantidade de partidas 1
