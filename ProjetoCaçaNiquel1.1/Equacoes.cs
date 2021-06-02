@@ -16,5 +16,10 @@ namespace ProjetoCaçaNiquel1._1
         {
             InitializeComponent();
         }
+
+        private void Equacoes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

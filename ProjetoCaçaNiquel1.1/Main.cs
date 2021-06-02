@@ -33,7 +33,6 @@ namespace ProjetoCaçaNiquel1._1
         {
             InitializeComponent();
             // Listagem de discos da roleta (1 laranja -- 3 bananas -- 6 maças)
-
             listaRoleta = new List<string>();
             listaRoleta.Add("laranja.png");
             listaRoleta.Add("banana.png");
@@ -46,7 +45,7 @@ namespace ProjetoCaçaNiquel1._1
             listaRoleta.Add("maca.png");
             listaRoleta.Add("maca.png");
             _soundPlayer = new SoundPlayer("sonicStarLight.wav");
-            _soundPlayer.PlayLooping();
+           
         }
         private void Main_Load(object sender, EventArgs e)
         {// A imagem inicial sendo uma estrela
@@ -58,6 +57,7 @@ namespace ProjetoCaçaNiquel1._1
         }
         private void BtnStart_Click_1(object sender, EventArgs e)
         {
+            _soundPlayer.Stop();
             // start fazendo acionar o timer start
             btnSair.Visible = BtnStart.Visible = false;
             tempo = 0;
@@ -66,11 +66,9 @@ namespace ProjetoCaçaNiquel1._1
             timer1.Start();
         }
         private void btnSair_Click(object sender, EventArgs e)
-        {// o botão sair ira converter o objeto novojogador em uma string do padrão Json
-            string conteudo = JsonConvert.SerializeObject(novojogador) + "\n";
-            //string dados = novojogador.Nome + " ---> R$" + novojogador.Saldo.ToString("0.00");
-            File.AppendAllText("dados.json", conteudo);
-
+        {
+            string conteudo = novojogador.ToString();
+            File.AppendAllText("arq.txt", conteudo+Environment.NewLine);
             this.Close();
         }
         /// <summary>
@@ -160,7 +158,7 @@ namespace ProjetoCaçaNiquel1._1
             _soundPlayerresult = new SoundPlayer(audio);
             _soundPlayerresult.Play();
             results.ShowDialog();
-            _soundPlayer.PlayLooping();
+            
         }
         /// <summary>
         /// Condição para indicar se o saldo é positivo ou negativo usando as cores branca e vermelho
@@ -172,7 +170,7 @@ namespace ProjetoCaçaNiquel1._1
                 labelSaldo.ForeColor = Color.White;
 
             }
-            else
+            else if(novojogador.Saldo<0)
             {
                 labelSaldo.ForeColor = Color.Red;
             }

@@ -44,8 +44,10 @@ namespace ProjetoCaçaNiquel1._1
             errorProvider1.Clear();
             main.Nomemain = textNome.Text;
             this.Visible = false;
+           
             main.ShowDialog();
             this.Visible = true;
+            _soundPlayer.PlayLooping();
 
 
 
@@ -59,8 +61,10 @@ namespace ProjetoCaçaNiquel1._1
         {
             this.Visible = false;
             Ranking ranking = new Ranking();
+        
             ranking.ShowDialog();
             this.Visible = true;
+          
         }
         /// <summary>
         /// Exibir as equações
@@ -71,8 +75,10 @@ namespace ProjetoCaçaNiquel1._1
         {
             this.Visible = false;
             Equacoes equacoes = new Equacoes();
+          
             equacoes.ShowDialog();
             this.Visible = true;
+           
 
         }
         /// <summary>

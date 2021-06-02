@@ -63,6 +63,16 @@ namespace ProjetoCaçaNiquel1._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Arvore {
+            get {
+                object obj = ResourceManager.GetObject("Arvore", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap finish {
             get {
                 object obj = ResourceManager.GetObject("finish", resourceCulture);
@@ -96,6 +106,16 @@ namespace ProjetoCaçaNiquel1._1.Properties {
         internal static System.Drawing.Bitmap Sky1 {
             get {
                 object obj = ResourceManager.GetObject("Sky1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tabela2 {
+            get {
+                object obj = ResourceManager.GetObject("tabela2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

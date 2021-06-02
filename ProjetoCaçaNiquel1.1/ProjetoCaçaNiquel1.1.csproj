@@ -5,6 +5,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>ProjetoCaçaNiquel1._1</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>iconfinder_golden-star_41234.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
